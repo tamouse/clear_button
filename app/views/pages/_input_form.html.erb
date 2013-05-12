@@ -1,0 +1,16 @@
+
+<%= form_tag request.fullpath, method: 'get' do %>
+	<table cellpadding="5">
+		<tr>
+			<td>												
+				<%= text_field_tag :input_field ,params[:input_field] %>						
+			</td>					
+			<td>
+				<%= submit_tag "Show", id: "show_button" %>
+			</td>
+			<td>
+				<%= submit_tag "Clear", id: "clear_button" %>
+			</td>					
+		</tr>
+	</table>			
+<% end %>
